@@ -1,8 +1,9 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import LeftSidebar from './components/leftSidebar/LeftSidebar';
 import Home from './pages/home/Home';
+import LeftSidebar from './components/leftSidebar/LeftSidebar';
 import RightSidebar from './components/rightSidebar/RightSidebar';
+import Login from './pages/login/Login';
 
 function App() {
   
@@ -10,15 +11,16 @@ function App() {
   return (
     <>
 
-    <Home/>
-    <LeftSidebar/>
-    <RightSidebar/>
-      {/*<BrowserRouter>
-          <LeftSidebar/>
+  
+      <BrowserRouter>
+      <LeftSidebar/>
           <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           </Routes>
-  </BrowserRouter>*/}
+      <RightSidebar/>
+  </BrowserRouter>
     </>
   );
 }

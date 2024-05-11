@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function LeftSidebar(){
 
     return(
@@ -5,9 +7,9 @@ export default function LeftSidebar(){
             <div className="text-left text-4xl">
                 <h2 className="text-pink-2 font-semibold py-6 px-14 ">Memora</h2>
 
-                <ul className="flex flex-col gap-2 w-full">
+                <div className="flex flex-col gap-2 w-full">
 
-                    <li className="font-sans text-sm text-branco font-medium py-1 px-14  hover:bg-gradient-to-r from-purple to-pink-1 flex">
+                    <Link to='/home' className="font-sans text-sm text-branco font-medium py-1 px-14  hover:bg-gradient-to-r from-purple to-pink-1 flex">
                     <svg className="mr-2 h-5 w-5 text-red-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
                     <path stroke="none" d="M0 0h24v24H0z"/>  
                     <polyline points="5 12 3 12 12 3 21 12 19 12" />  
@@ -15,7 +17,7 @@ export default function LeftSidebar(){
                     <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
                     </svg> 
                         início
-                    </li>
+                    </Link>
 
                     <li className="font-sans text-sm text-branco font-medium py-1 px-14 hover:bg-gradient-to-r from-purple to-pink-1 flex">
                     <svg className="mr-2 h-5 w-5 text-red-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
@@ -56,7 +58,7 @@ export default function LeftSidebar(){
                         notificações
                     </li>
 
-                    <li className="font-sans text-sm text-branco font-medium py-1 px-14 mb-4 hover:bg-gradient-to-r from-purple to-pink-1 flex">
+                    <li className="font-sans text-sm text-branco font-medium py-1 px-14 hover:bg-gradient-to-r from-purple to-pink-1 flex">
                     <svg className="mr-2 h-5 w-5 text-red-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
                     <path stroke="none" d="M0 0h24v24H0z"/>  
                     <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />  
@@ -64,7 +66,15 @@ export default function LeftSidebar(){
                     </svg>
                         opções
                     </li>
-                </ul>
+
+                    <Link to='/login' className="font-sans text-sm text-branco font-medium py-1 px-14 mb-4 hover:bg-gradient-to-r from-purple to-pink-1 flex">
+                    <svg className="mr-2 h-5 w-5 text-red-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />  
+                    <polyline points="10 17 15 12 10 7" />  
+                    <line x1="15" y1="12" x2="3" y2="12" />
+                    </svg>
+                        login
+                        </Link>
+                </div>
 
                 <button className="font-sans font-medium text-sm text-branco bg-gradient-to-r from-pink-1 to-pink-2 px-12 pr-16 py-2 mx-2 rounded-lg items-center flex">
                 <svg className="mr-2 h-5 w-5 text-red-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  

@@ -5,6 +5,7 @@ function Home() {
 
     return(
         <>
+            
             <div className='ml-28 pl-28'>
             <div className='flex-grow'>
             <div className="bg-[url(/home/thamires/memora-project/src/assets/e22f1485bb68385d42f060d3aea594c9.jpg)] py-10 width:100% top-0">
@@ -20,6 +21,7 @@ function Home() {
                 </div>
             </div>
             </div>
+            
             </div>
           
         </>
